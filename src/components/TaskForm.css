@@ -1,0 +1,23 @@
+.task-form {
+    width: 40%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: left;
+    display: inline-block;
+  }
+  
+  .task-form h2 {
+    color: #333;
+  }
+  
+  .task-form input {
+    margin-right: 10px;
+    padding: 5px;
+  }
+  
+  .task-form button {
+    cursor: pointer;
+    padding: 5px 10px;
+  }
+  
