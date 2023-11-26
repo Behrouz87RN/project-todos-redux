@@ -1,5 +1,5 @@
 .task-list-container {
-    width: 40%;
+    min-width: 100%;
     margin: 14px auto 0 auto;
     padding: 20px;
     box-shadow: 0 0 10px #0000001a;
