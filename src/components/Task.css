@@ -5,16 +5,22 @@
     margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #ccc;
+    background-color: #e5e5e5;
+    border-radius: 12px;
   }
   
   .task span {
     flex-grow: 1;
     font-weight: bold; 
+    word-break: break-word;
+    text-align: left;
+
   }
   
   .task button {
-    margin-left: 10px;
+    margin-left: 8px;
     cursor: pointer;
+    border-radius: 10px;
   }
   
   .task.complete {
@@ -27,4 +33,30 @@
   .task.incomplete {
     text-decoration: none;
   }
+
+  .delete{
+    background-color: #c70202;
+    padding: 6px;
+  }
   
+  .task-status-done-Icon{
+    width: 30px;
+    height: auto;
+    color: green;
+  }
+
+  .task-btn{
+    background-color:  #e5e5e5;
+  }
+
+  .task-status-ongoing-Icon{
+    width: 30px;
+    height: auto;
+    color: red;
+  }
+
+  .task-status-bin-Icon{
+    width: 20px;
+    height: auto;
+    
+  }

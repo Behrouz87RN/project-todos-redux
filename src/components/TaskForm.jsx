@@ -17,14 +17,14 @@ const TaskForm = () => {
 
   return (
     <div className="task-form">
-      <h2>Add Task</h2>
+      <h2>New tasks to my list...</h2>
       <input
         type="text"
         value={newTask}
         onChange={(e) => setNewTask(e.target.value)}
-        placeholder="Enter task..."
+        placeholder="Enter new task here..."
       />
-      <button onClick={handleAddTask}>Add Task</button>
+      <button onClick={handleAddTask}>Add now</button>
     </div>
   );
 };

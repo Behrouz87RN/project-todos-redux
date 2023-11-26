@@ -1,6 +1,10 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { toggleTask, removeTask } from '../reducers/tasks'; 
+import { RiDeleteBin6Line } from "react-icons/ri";
+import { IoIosCheckmarkCircleOutline } from "react-icons/io";
+import { PiClockCountdownThin } from "react-icons/pi";
+import { IconContext } from "react-icons";
 import './Task.css'; 
 
 const Task = ({ task }) => {
@@ -17,10 +21,22 @@ const Task = ({ task }) => {
   return (
     <div className={`task ${task.complete ? 'complete' : 'incomplete'}`}>
       <span>{task.text}</span>
-      <button onClick={handleToggleComplete}>
-        {task.complete ? 'Mark Incomplete' : 'Mark Complete'}
-      </button>
-      <button onClick={handleRemoveTask}>Remove</button>
+
+        <button onClick={handleToggleComplete} className='task-btn'>
+          {task.complete ? (
+          <IconContext.Provider value={{className: 'task-status-done-Icon'}}>
+            <IoIosCheckmarkCircleOutline />
+          </IconContext.Provider>
+          ) : (
+          <IconContext.Provider value={{className: 'task-status-ongoing-Icon'}}>
+            <PiClockCountdownThin />
+          </IconContext.Provider>)}
+        </button>
+        <button className="delete" onClick={handleRemoveTask}>
+        <IconContext.Provider value={{className: 'task-status-bin-Icon'}}>
+          <RiDeleteBin6Line/>
+        </IconContext.Provider>
+        </button>
     </div>
   );
 };

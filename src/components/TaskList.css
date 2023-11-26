@@ -1,12 +1,13 @@
-.task-list {
+.task-list-container {
     width: 40%;
-    margin: 0 auto;
+    margin: 14px auto 0 auto;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px #0000001a;
+    background-color: #FCA311;;
+    border-radius: 12px;
+    border: 3px solid #14213D;
   }
-  
-  .task-list h2 {
+  .task-list-title{
     color: #333;
   }
   
