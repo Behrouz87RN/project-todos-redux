@@ -1,4 +1,4 @@
-import './header.css';
+import './Header.css';
 import { MdOutlineTask } from 'react-icons/md';
 import { IconContext } from 'react-icons';
 
