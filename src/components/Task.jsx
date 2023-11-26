@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { toggleTask, removeTask } from '../reducers/tasks'; 
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
-import { PiClockCountdownThin } from "react-icons/pi";
+import { IoIosCheckmarkCircle } from "react-icons/io";
 import { IconContext } from "react-icons";
 import './Task.css'; 
 
@@ -25,11 +25,11 @@ const Task = ({ task }) => {
         <button onClick={handleToggleComplete} className='task-btn'>
           {task.complete ? (
           <IconContext.Provider value={{className: 'task-status-done-Icon'}}>
-            <IoIosCheckmarkCircleOutline />
+            <IoIosCheckmarkCircle />
           </IconContext.Provider>
           ) : (
           <IconContext.Provider value={{className: 'task-status-ongoing-Icon'}}>
-            <PiClockCountdownThin />
+            <IoIosCheckmarkCircleOutline />
           </IconContext.Provider>)}
         </button>
         <button className="delete" onClick={handleRemoveTask}>

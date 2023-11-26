@@ -1,11 +1,10 @@
 header {
     margin-top: 12px;
-    background: #FCA311;
-    width: 40%;
+    background-color: #14213D;
+    min-width: 100%;
     margin: 14px auto 0 auto;
     padding: 8px;
     border-radius: 10px;
-    border: 3px solid #14213D;
 }
 .header-container{
     display: flex;
@@ -15,13 +14,13 @@ header {
 .header-container h1{
     font-size: 36px;
     margin: 10px 0 0 0;
-    color:#ffffff;
+    color:#FCA311;
     font-weight: 600;
     font-family:'Trebuchet MS';
 }
 
 .taskIcon{
-    width: 50px;
+    width: 45px;
     height: auto;
-    color:#14213D;
+    color:#fff;
 }

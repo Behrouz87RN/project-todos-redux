@@ -20,7 +20,7 @@
   .task button {
     margin-left: 8px;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 20px;
   }
   
   .task.complete {
@@ -35,7 +35,7 @@
   }
 
   .delete{
-    background-color: #c70202;
+    background-color: #d30101;
     padding: 6px;
   }
   
@@ -52,7 +52,7 @@
   .task-status-ongoing-Icon{
     width: 30px;
     height: auto;
-    color: red;
+    color: #666666;
   }
 
   .task-status-bin-Icon{
