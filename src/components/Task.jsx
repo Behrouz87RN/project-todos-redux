@@ -22,7 +22,11 @@ const Task = ({ task }) => {
     <div className={`task ${task.complete ? 'complete' : 'incomplete'}`}>
       <span>{task.text}</span>
 
-        <button onClick={handleToggleComplete} className='task-btn'>
+        <button 
+          onClick={handleToggleComplete} 
+          className='task-btn' 
+          aria-label='toggle task'
+        >
           {task.complete ? (
           <IconContext.Provider value={{className: 'task-status-done-Icon'}}>
             <IoIosCheckmarkCircle />
@@ -32,7 +36,11 @@ const Task = ({ task }) => {
             <IoIosCheckmarkCircleOutline />
           </IconContext.Provider>)}
         </button>
-        <button className="delete" onClick={handleRemoveTask}>
+        <button 
+          className="delete" 
+          onClick={handleRemoveTask}
+          aria-label='delete task'
+        >
         <IconContext.Provider value={{className: 'task-status-bin-Icon'}}>
           <RiDeleteBin6Line/>
         </IconContext.Provider>
